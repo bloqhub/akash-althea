@@ -36,7 +36,7 @@ wood system walnut transfer square soon into very spatial note grief cliff dismi
 export AKASH_ACCOUNT_ADDRESS="$(akash keys show default -a)"
 export AKASH_KEY_NAME="default"
 ```
-Для продолжения необходимо преборести АКТ токены - https://akash.network/token
+Для продолжения необходимо приобрести АКТ токены - https://akash.network/token
 
 Проверяем баланс 
 ```
@@ -49,7 +49,7 @@ akash tx cert create client --from=$AKASH_KEY_NAME --chain-id $AKASH_CHAIN_ID --
 На этом этапе установку akash можно считать завершенной
 
 Разворачиваем нашу конфигурацию с образом althea
-Создаем кофигурационный файл deploy.yml
+Создаем конфигурационный файл deploy.yml
 ```
 cat > deploy.yml <<EOF
 ---
@@ -107,7 +107,7 @@ deployment:
 EOF
 ```
 Важно! адрес "akash1365yvmc4s7awdyj3n2sav7xfx76adc6dnmlx63" оставляем неизменным - это адрес escrow аккаунта.
-Параметры cpu, memory и size в данной конфиграции установленны  близкими к минимальным, в реальном использовании необходимо
+Параметры cpu, memory и size в данной конфигурации установлены  близкими к минимальным, в реальном использовании необходимо
 увеличить их
 
 Разворачиваем нашу конфигурацию
@@ -137,8 +137,8 @@ akash query deployment get --owner $AKASH_ACCOUNT_ADDRESS --node $AKASH_NODE --d
 ```
 akash query market bid list --owner=$AKASH_ACCOUNT_ADDRESS --node $AKASH_NODE --dseq $AKASH_DSEQ
 ```
-в списке возвращвемом командой выбираем провайдера
-и присвваем переменной его адрес
+в списке возвращаемом командой выбираем провайдера
+и присваиваем переменной его адрес
 ```
 export AKASH_PROVIDER=akash14c4ng96vdle6tae8r4hc2w4ujwrshdddtuudk0
 ```
@@ -181,6 +181,6 @@ ssh root@cluster.provider-0.prod.ams1.akash.pub -p 31549
 akash provider lease-logs --node "$AKASH_NODE" --dseq "$AKASH_DSEQ" --gseq "$AKASH_GSEQ" --oseq "$AKASH_OSEQ" --provider "$AKASH_PROVIDER" --from "$AKASH_KEY_NAME"
 ```
 
-После входа на ноду производим настройку валидатора согласно дукументации, пропуская этап установки
+После входа на ноду производим настройку валидатора согласно документации, пропуская этап установки
 
 https://github.com/althea-net/althea-chain/blob/main/docs/althea/althea-testnet-docs/setting-up-a-validator-manual.md
