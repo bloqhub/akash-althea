@@ -110,7 +110,7 @@ EOF
 Параметры cpu, memory и size в данной конфиграции установленны  близкими к минимальным, в реальном использовании необходимо
 увеличить их
 
-Развораяиваем нашу конфигурацию
+Разворачиваем нашу конфигурацию
 ```
 akash tx deployment create deploy.yml --from $AKASH_KEY_NAME --node $AKASH_NODE --chain-id $AKASH_CHAIN_ID --fees 200uakt -b sync -y
 
