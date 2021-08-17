@@ -181,3 +181,6 @@ ssh root@cluster.provider-0.prod.ams1.akash.pub -p 31549
 akash provider lease-logs --node "$AKASH_NODE" --dseq "$AKASH_DSEQ" --gseq "$AKASH_GSEQ" --oseq "$AKASH_OSEQ" --provider "$AKASH_PROVIDER" --from "$AKASH_KEY_NAME"
 ```
 
+После входа на ноду производим настройку валидатора согласно дукументации, пропуская этап установки
+
+https://github.com/althea-net/althea-chain/blob/main/docs/althea/althea-testnet-docs/setting-up-a-validator-manual.md
