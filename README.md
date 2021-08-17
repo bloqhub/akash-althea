@@ -147,7 +147,7 @@ export AKASH_PROVIDER=akash14c4ng96vdle6tae8r4hc2w4ujwrshdddtuudk0
 akash tx market lease create --chain-id $AKASH_CHAIN_ID --node $AKASH_NODE --owner $AKASH_ACCOUNT_ADDRESS --dseq $AKASH_DSEQ --gseq $AKASH_GSEQ --oseq $AKASH_OSEQ --provider
 $AKASH_PROVIDER --from $AKASH_KEY_NAME --fees 200uakt -y
 ```
-спустя несколько секунда проверяем статус
+спустя несколько секунд проверяем статус
 ```
 akash query market lease list — owner $AKASH_ACCOUNT_ADDRESS — node $AKASH_NODE — dseq $AKASH_DSEQ
 ```
