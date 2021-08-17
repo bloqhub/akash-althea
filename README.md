@@ -170,8 +170,8 @@ akash provider lease-status --node $AKASH_NODE --dseq $AKASH_DSEQ --from $AKASH_
 "name": "althea"
 },
 ```
-нас интересует host и externalPort
-в этом примере мы подключаемся к нашей ноде
+нас интересует host и externalPort.
+В этом примере мы подключаемся к нашей ноде:
 ```
 ssh root@cluster.provider-0.prod.ams1.akash.pub -p 31549
 ```
